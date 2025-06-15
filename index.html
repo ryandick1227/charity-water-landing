@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Drop Can Change Everything</title>
+  <style>
+    :root {
+      --blue: #00a3e0;
+      --dark-blue: #003366;
+      --accent: #007bb8;
+      --light-blue-bg: linear-gradient(to bottom, #ffffff, #e6f2ff);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light-blue-bg);
+      color: var(--dark-blue);s
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    header {stroke: ;
+      background-color: var(--blue);
+      padding: 24px 10px;
+      text-align: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 8%;
+      gap: 40px;
+    }
+
+    .left-panel {
+      flex: 1 1 45%;
+      padding: 10px;
+    }
+
+    .left-panel h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+      color: var(--dark-blue);
+      text-transform: uppercase;
+    }
+
+    .left-panel h2 {
+      font-size: 36px;
+      margin-bottom: 25px;
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .left-panel p {
+      font-size: 18px;
+      color: #004c91;
+      margin-bottom: 32px;
+    }
+
+    .cta {
+      display: inline-block;
+      background-color: var(--blue);
+      color: white;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta:hover {
+      background-color: var(--accent);
+      transform: scale(1.05);
+    }
+
+    .right-panel {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+
+    .right-panel img {
+      width: 100%;
+      max-width: 520px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .right-panel img:hover {
+      transform: scale(1.02);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .logo img {
+      width: 26px;
+      height: 26px;
+    }
+
+    footer {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 16px;
+      font-size: 13px;
+      color: #666;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 40px 5%;
+        text-align: center;
+      }
+
+      .left-panel h1 {
+        font-size: 30px;
+      }
+
+      .left-panel h2 {
+        font-size: 24px;
+      }
+
+      .left-panel p, .cta {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    One Drop Can Change Everything
+  </header>
+
+  <div class="container">
+    <div class="left-panel">
+      <h1>One Drop Can Change</h1>
+      <h2>Everything</h2>
+      <p>
+        Be the voice for <strong>703 million</strong> people living without clean water.<br />
+        Join the global movement—start with a small donation that sparks real change.
+      </p>
+      <a class="cta" href="#" onclick="alert('Thank you for joining the cause! 💧')">Start a Ripple of Change 💧</a>
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Charity_Water_Logo.png" alt="charity: water logo">
+        charity: water
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <img src="https://via.placeholder.com/600x400.png?text=Smiling+Girl+with+Clean+Water" alt="Girl with clean water">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 charity: water. All rights reserved.
+  </footer>
+</body>
+</html>
